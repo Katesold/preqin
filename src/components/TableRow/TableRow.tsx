@@ -1,24 +1,28 @@
 import { StyledTableRow, TableData } from "./styles";
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FirmData } from "../../types";
 
 interface Props {
   data: FirmData;
+  readOnly?: boolean;
 }
 
-const TableRow: React.FC<Props> = ({ data }) => {
+const TableRow: React.FC<Props> = ({ data, readOnly }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/investors/${data.firmID}`, { state: data });
+  };
+
   return (
-    <StyledTableRow>
+    <StyledTableRow onClick={readOnly ? undefined : handleClick}>
       <TableData>{data.firmID}</TableData>
       <TableData>{data.firmName}</TableData>
       <TableData>{data.firmType}</TableData>
       <TableData>{data.yearEst}</TableData>
       <TableData>{data.address}</TableData>
-      <TableData>
-        <Link to={`/investors/${data.firmID}`}>View Details</Link>
-      </TableData>
     </StyledTableRow>
   );
 };

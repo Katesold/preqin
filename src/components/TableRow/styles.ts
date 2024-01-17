@@ -6,7 +6,6 @@ export const StyledTableRow = styled.tr`
 `;
 
 export const TableData = styled.td`
-  width: 25%;
   height: 50px;
   font-size: 13px;
   line-height: 18px;

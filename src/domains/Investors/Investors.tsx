@@ -1,9 +1,9 @@
 import { memo, useEffect, useState } from "react";
 
-import Table from "../Table/Table";
+import Table from "../../components/Table/Table";
 import { StyledTableContainer } from "./styles";
 
-export const TableContainer = memo(() => {
+export const Investors = memo(() => {
   const [firmsData, setFirmsData] = useState<{ data: any[] }>({ data: [] });
 
   const getData = async () => {

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// import { ToastContainer } from 'react-toastify';
-
 export const StyledTableContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,14 +16,18 @@ export const StyledTable = styled.table`
 
 export const TableHead = styled.thead`
   width: 100%;
+  background-color: #abfdeb;
 `;
 
-export const TableBody = styled.tbody`
+export const TableBody = styled.tbody<{ readOnly?: boolean }>`
   width: 100%;
+  tr:hover {
+    background-color: ${({ readOnly }) => (readOnly ? "abfdeb" : "none")};
+  }
 `;
 
 export const TableHeader = styled.th`
-  width: 25%;
+  width: 10%;
   height: 28px;
   font-size: 11px;
   line-height: 18px;
