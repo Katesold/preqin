@@ -1,12 +1,13 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
+
+import App from "./App";
 
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
 }));
 
-test("renders learn react link", () => {
+test("renders App with table container", () => {
   const routes = [
     {
       path: "/",

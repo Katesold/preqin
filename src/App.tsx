@@ -1,12 +1,16 @@
 import "./App.css";
-import { Link, Outlet } from "react-router-dom";
+
+import { Outlet } from "react-router-dom";
+import { TableContainer } from "./components/TableContainer/TableContainer";
+import GlobalStyle from "./global";
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyle />
       <Outlet />
-      <Link to={`investor/1`}>investor</Link>
-    </div>
+      <TableContainer />
+    </>
   );
 }
 

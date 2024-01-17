@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should match snapshot 1`] = `
+<div>
+  <table
+    class="sc-guDLey bZjJOl"
+  >
+    <thead
+      class="sc-dmyCSP ksQsTG"
+    >
+      <tr
+        class="sc-jTQCzO kKsiDq"
+      >
+        <th
+          class="sc-eDLKkx dfMviv"
+        >
+          Firm ID
+        </th>
+        <th
+          class="sc-eDLKkx dfMviv"
+        >
+          Firm Name
+        </th>
+        <th
+          class="sc-eDLKkx dfMviv"
+        >
+          Type
+        </th>
+        <th
+          class="sc-eDLKkx dfMviv"
+        >
+          Date Added
+        </th>
+        <th
+          class="sc-eDLKkx dfMviv"
+        >
+          Address
+        </th>
+        <th
+          class="sc-eDLKkx dfMviv"
+        >
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sc-hLQSwg gYvGVw"
+    >
+      <tr
+        class="sc-gLLuof bZixAE"
+      >
+        <td
+          class="sc-iBdnpw duhZxR"
+        >
+          2670
+        </td>
+        <td
+          class="sc-iBdnpw duhZxR"
+        >
+          1199SEIU National Benefit Fund
+        </td>
+        <td
+          class="sc-iBdnpw duhZxR"
+        >
+          Private Sector Pension Fund
+        </td>
+        <td
+          class="sc-iBdnpw duhZxR"
+        />
+        <td
+          class="sc-iBdnpw duhZxR"
+        >
+          498 Seventh Avenue
+        </td>
+        <td
+          class="sc-iBdnpw duhZxR"
+        >
+          <a
+            href="/investors/2670"
+          >
+            View Details
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders table container and fetches data 1`] = `
+<div>
+  <div
+    class="sc-fsYfdN gcAEzM"
+  >
+    <h1>
+      Investors List
+    </h1>
+    <table
+      class="sc-guDLey bZjJOl"
+    >
+      <thead
+        class="sc-dmyCSP ksQsTG"
+      >
+        <tr
+          class="sc-jTQCzO kKsiDq"
+        >
+          <th
+            class="sc-eDLKkx dfMviv"
+          >
+            Firm ID
+          </th>
+          <th
+            class="sc-eDLKkx dfMviv"
+          >
+            Firm Name
+          </th>
+          <th
+            class="sc-eDLKkx dfMviv"
+          >
+            Type
+          </th>
+          <th
+            class="sc-eDLKkx dfMviv"
+          >
+            Date Added
+          </th>
+          <th
+            class="sc-eDLKkx dfMviv"
+          >
+            Address
+          </th>
+          <th
+            class="sc-eDLKkx dfMviv"
+          >
+            Action
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="sc-hLQSwg gYvGVw"
+      />
+    </table>
+  </div>
+</div>
+`;

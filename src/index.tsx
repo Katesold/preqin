@@ -1,10 +1,12 @@
+import "./index.css";
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 import reportWebVitals from "./reportWebVitals";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +15,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "investment/:Id",
+        path: "investors/:Id",
         element: (
           <div>
             <p>test</p>
