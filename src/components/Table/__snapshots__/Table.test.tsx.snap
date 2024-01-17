@@ -61,7 +61,9 @@ exports[`Table should match snapshot 1`] = `
         </td>
         <td
           class="sc-iBdnpw klwsqO"
-        />
+        >
+          -
+        </td>
         <td
           class="sc-iBdnpw klwsqO"
         >

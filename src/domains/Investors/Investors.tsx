@@ -5,7 +5,6 @@ import { StyledTableContainer } from "./styles";
 
 export const Investors = memo(() => {
   const [firmsData, setFirmsData] = useState<{ data: any[] }>({ data: [] });
-
   const getData = async () => {
     try {
       const response = await fetch(

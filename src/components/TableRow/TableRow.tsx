@@ -21,7 +21,7 @@ const TableRow: React.FC<Props> = ({ data, readOnly }) => {
       <TableData>{data.firmID}</TableData>
       <TableData>{data.firmName}</TableData>
       <TableData>{data.firmType}</TableData>
-      <TableData>{data.yearEst}</TableData>
+      <TableData>{data.yearEst === "" ? "-" : data.yearEst}</TableData>
       <TableData>{data.address}</TableData>
     </StyledTableRow>
   );
