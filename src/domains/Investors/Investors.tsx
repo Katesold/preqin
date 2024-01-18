@@ -33,7 +33,11 @@ export const Investors = memo(() => {
   return (
     <StyledTableContainer>
       <h1>Investors List</h1>
-      {firmsData.data.length ? <Table firms={firmsData.data} /> : null}
+      {firmsData?.data?.length ? (
+        <Table firms={firmsData.data} />
+      ) : (
+        <p>Loading...</p>
+      )}
     </StyledTableContainer>
   );
 });

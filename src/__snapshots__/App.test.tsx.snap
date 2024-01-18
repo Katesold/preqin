@@ -8,6 +8,9 @@ exports[`renders App with table container 1`] = `
     <h1>
       Investors List
     </h1>
+    <p>
+      Loading...
+    </p>
   </div>
 </div>
 `;

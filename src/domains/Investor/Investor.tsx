@@ -12,6 +12,7 @@ export const Investor = () => {
   const options = Object.values(AssetClasses);
   const location = useLocation();
   const [selectedOption, setSelectedOption] = useState("Select an option");
+  const [tableData, setTableData] = useState([]);
 
   const fetchCommitment = async (investorId = 1, selectedOption: string) => {
     const assetClass = selectedOption.slice(0, 2);
@@ -35,7 +36,8 @@ export const Investor = () => {
 
     return response.json();
   };
-  const { data, isLoading, isError, error, refetch } = useQuery({
+
+  const { data, isLoading, isError, error, isFetching } = useQuery({
     queryKey: ["commitment"],
     queryFn: () => fetchCommitment(location.state.firmID, selectedOption),
     enabled: !!location?.state?.firmID && selectedOption !== "Select an option",
@@ -52,8 +54,12 @@ export const Investor = () => {
   }, [isError, error]);
 
   useEffect(() => {
-    if (selectedOption !== "Select an option") refetch();
-  }, [selectedOption, refetch]);
+    if (selectedOption === "Select an option" || isError) {
+      setTableData([]);
+    } else {
+      setTableData(data?.data);
+    }
+  }, [selectedOption, data?.data, isError]);
 
   return (
     <InvestorContainer>
@@ -64,15 +70,15 @@ export const Investor = () => {
         onSelect={handleSelect}
         selectedOption={selectedOption}
       />
-      {isLoading ? (
+      {isLoading || isFetching ? (
         <p>Loading..</p>
       ) : (
         <div>
           <h2 style={{ padding: "20px" }}>Fund Details</h2>
           <StyledTable style={{ width: "50%", margin: "auto" }}>
             <tbody>
-              {data?.data
-                ? data.data.map(
+              {tableData?.length
+                ? tableData.map(
                     (investor: { [s: string]: unknown } | ArrayLike<unknown>) =>
                       Object.entries(investor).map(([key, value]) => (
                         <tr key={key + value}>

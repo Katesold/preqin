@@ -8,6 +8,9 @@ exports[`renders table container and fetches data 1`] = `
     <h1>
       Investors List
     </h1>
+    <p>
+      Loading...
+    </p>
   </div>
 </div>
 `;

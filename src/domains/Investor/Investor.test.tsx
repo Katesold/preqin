@@ -5,7 +5,7 @@ import {
   createMemoryRouter,
   useLocation,
 } from "react-router-dom";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 
 import { Investor } from "./Investor";
 import { useQuery } from "@tanstack/react-query"; // Mock react-query's useQuery
@@ -77,6 +77,8 @@ describe("Investor Component", () => {
     const { container } = render(<RouterProvider router={router} />);
 
     expect(screen.getByText(/Firm ID/)).toBeInTheDocument();
+    fireEvent.click(screen.getByText("Select an option"));
+    fireEvent.click(screen.getByText("PE(Private Equity)"));
     expect(
       screen.getByText(/1199SEIU National Benefit Fund/)
     ).toBeInTheDocument();
