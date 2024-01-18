@@ -1,3 +1,9 @@
+# Preqin Project
+
+This project displays data received from preqin endpoints that include firm and commitment information.
+
+The endpoints use a key for auth and need to be included in a .env file which is not shared publicly in this project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
