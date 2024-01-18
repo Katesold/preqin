@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Investor Component renders investor component with initial state 1`] = `
+<div>
+  <div
+    class="sc-jTQCzO hIlhHy"
+  >
+    <h1>
+      Investor 
+      Test Firm
+    </h1>
+    <table
+      class="sc-iBdnpw bqszkd"
+    >
+      <thead
+        class="sc-fsYfdN fQScNy"
+      >
+        <tr
+          class="sc-kFCroH ebMFOg"
+        >
+          <th
+            class="sc-jsEeTM clubGg"
+          >
+            Firm ID
+          </th>
+          <th
+            class="sc-jsEeTM clubGg"
+          >
+            Firm Name
+          </th>
+          <th
+            class="sc-jsEeTM clubGg"
+          >
+            Type
+          </th>
+          <th
+            class="sc-jsEeTM clubGg"
+          >
+            Date Added
+          </th>
+          <th
+            class="sc-jsEeTM clubGg"
+          >
+            Address
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="sc-qZrbh iODXuz"
+        readonly=""
+      >
+        <tr
+          class="sc-irLvIq euuTWe"
+        >
+          <td
+            class="sc-csKJxZ bpPyNX"
+          >
+            123
+          </td>
+          <td
+            class="sc-csKJxZ bpPyNX"
+          >
+            Test Firm
+          </td>
+          <td
+            class="sc-csKJxZ bpPyNX"
+          >
+            type
+          </td>
+          <td
+            class="sc-csKJxZ bpPyNX"
+          >
+            -
+          </td>
+          <td
+            class="sc-csKJxZ bpPyNX"
+          >
+            address 123
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="sc-beySPh knomkA"
+    >
+      <div
+        class="sc-guDLey jehYId"
+      >
+        Select an option
+        <span
+          class="sc-dmyCSP dLJUjY"
+        />
+      </div>
+    </div>
+    <div>
+      <h2
+        style="padding: 20px;"
+      >
+        Fund Details
+      </h2>
+      <table
+        class="sc-iBdnpw bqszkd"
+        style="width: 50%; margin: auto;"
+      >
+        <tbody>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              investorId
+            </td>
+            <td>
+              2670
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              investorName
+            </td>
+            <td>
+              1199SEIU National Benefit Fund
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              fundId
+            </td>
+            <td>
+              16932
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              fundName
+            </td>
+            <td>
+              AFL-CIO Housing Investment Trust
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              fundManagerId
+            </td>
+            <td>
+              12699
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              fundManagerName
+            </td>
+            <td>
+              AFL-CIO
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              fundCurrency
+            </td>
+            <td>
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              fundSizeMn
+            </td>
+            <td>
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              committedMn
+            </td>
+            <td>
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              vintage
+            </td>
+            <td>
+              2010
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              fundType
+            </td>
+            <td>
+              Real Estate Debt
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              primarySector
+            </td>
+            <td>
+              Residential
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              domicile
+            </td>
+            <td>
+              Maryland
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              benchmarkLocations
+            </td>
+            <td>
+              North America
+               
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 10px;"
+            >
+              managerExperience
+            </td>
+            <td>
+               
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

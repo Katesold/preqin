@@ -18,7 +18,9 @@ export const Investor = () => {
     const asset = Object.keys(AssetClasses).find((a) => a.includes(assetClass));
 
     const response = await fetch(
-      `https://api.preqin.com/api/Investor/commitment/${asset?.toLowerCase()}/${investorId}`,
+      `https://api.preqin.com/api/Investor/commitment/${
+        asset ? asset.toLowerCase() : ""
+      }/${investorId}`,
       {
         headers: {
           "Content-Type": "application/json",
@@ -70,19 +72,20 @@ export const Investor = () => {
           <StyledTable style={{ width: "50%", margin: "auto" }}>
             <tbody>
               {data?.data
-                ? data.data.map((investor: any) =>
-                    Object.entries(investor).map(([key, value]) => (
-                      <tr key={key + value}>
-                        <td
-                          style={{
-                            padding: "10px",
-                          }}
-                        >
-                          {key}
-                        </td>
-                        <td>{value as string} </td>
-                      </tr>
-                    ))
+                ? data.data.map(
+                    (investor: { [s: string]: unknown } | ArrayLike<unknown>) =>
+                      Object.entries(investor).map(([key, value]) => (
+                        <tr key={key + value}>
+                          <td
+                            style={{
+                              padding: "10px",
+                            }}
+                          >
+                            {key}
+                          </td>
+                          <td>{value as string} </td>
+                        </tr>
+                      ))
                   )
                 : null}
             </tbody>
