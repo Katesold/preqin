@@ -8,46 +8,6 @@ exports[`renders App with table container 1`] = `
     <h1>
       Investors List
     </h1>
-    <table
-      class="sc-iBdnpw bqszkd"
-    >
-      <thead
-        class="sc-fsYfdN fQScNy"
-      >
-        <tr
-          class="sc-kFCroH ebMFOg"
-        >
-          <th
-            class="sc-jsEeTM clubGg"
-          >
-            Firm ID
-          </th>
-          <th
-            class="sc-jsEeTM clubGg"
-          >
-            Firm Name
-          </th>
-          <th
-            class="sc-jsEeTM clubGg"
-          >
-            Type
-          </th>
-          <th
-            class="sc-jsEeTM clubGg"
-          >
-            Date Added
-          </th>
-          <th
-            class="sc-jsEeTM clubGg"
-          >
-            Address
-          </th>
-        </tr>
-      </thead>
-      <tbody
-        class="sc-qZrbh gUswMD"
-      />
-    </table>
   </div>
 </div>
 `;

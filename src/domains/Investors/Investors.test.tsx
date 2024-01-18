@@ -8,5 +8,5 @@ test("renders table container and fetches data", async () => {
   const { container } = render(<Investors />);
 
   expect(container).toMatchSnapshot();
-  expect(screen.getByText("Firm ID")).toBeInTheDocument();
+  expect(screen.queryByText("Firm ID")).not.toBeInTheDocument();
 });

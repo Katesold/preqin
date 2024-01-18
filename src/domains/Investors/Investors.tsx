@@ -1,7 +1,7 @@
 import { memo, useEffect, useState } from "react";
 
-import Table from "../../components/Table/Table";
 import { StyledTableContainer } from "./styles";
+import Table from "../../components/Table/Table";
 
 export const Investors = memo(() => {
   const [firmsData, setFirmsData] = useState<{ data: any[] }>({ data: [] });
@@ -33,7 +33,7 @@ export const Investors = memo(() => {
   return (
     <StyledTableContainer>
       <h1>Investors List</h1>
-      <Table firms={firmsData.data} />
+      {firmsData.data.length ? <Table firms={firmsData.data} /> : null}
     </StyledTableContainer>
   );
 });

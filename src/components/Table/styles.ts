@@ -22,7 +22,7 @@ export const TableHead = styled.thead`
 export const TableBody = styled.tbody<{ readOnly?: boolean }>`
   width: 100%;
   tr:hover {
-    background-color: ${({ readOnly }) => (readOnly ? "abfdeb" : "none")};
+    background-color: ${({ readOnly }) => (readOnly ? "none" : "#abfdeb")};
   }
 `;
 
